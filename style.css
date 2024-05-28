@@ -9,6 +9,12 @@ body{
     position: relative;
     background:white;
 }
+
+/* Global CSS */
+.obj-width{
+    max-width: 1200px;
+    margin: auto
+}
 nav{
     background-color: #9171f8;
     box-shadow: 0 7px 10px rgba(0, 0, 219, 0.3);
@@ -48,4 +54,62 @@ nav{
  font-weight: 600;
  border: none;
  margin-left: 10px;
+}
+
+#blog-container{
+ padding: 3rem 0;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ flex-wrap: wrap;
+}
+
+.bolg-car{
+ width: 280px;
+ border: 1px solid slategray;
+ border-radius: 10px;
+ cursor: pointer;
+ margin: 15px;
+ padding: 1rem;
+ transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bolg-car:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bolg-car img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.bolg-car h2{
+   color: black;
+   font-size: 1.7rem;
+   font-weight: 500;
+}
+
+.bolg-car p{
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+@media (max-width: 500px){
+    nav{
+        padding:  0 20px;
+
+    }
+    .navbar .logo{
+        font-size: 1.4rem;
+    }
+    #search-input{
+        width: 150px;
+        padding: 10px 10px;
+    }
+    .bolg-car{
+        width: 100%;
+    }
 }
